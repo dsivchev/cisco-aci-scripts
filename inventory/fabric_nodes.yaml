@@ -1,0 +1,24 @@
+---
+
+aci_metadata:
+# Spines
+  - name: spine1 #hostname
+    nodeId: 101 #node ID
+    nodeType: spine #node type (leaf or spine)
+    podId: 1 #POD ID number
+    serial: TEP-1-103
+    route_reflector: True # Enable/Disable BGP on spines
+# - {hostname: leaf1, node_id: 1001, node_type: leaf}
+#Leafs
+  - name: leaf1
+    nodeId: 1001
+    nodeType: leaf
+    podId: 1
+    serial: TEP-1-101
+    route_reflector: False
+  - name: leaf2
+    nodeId: 1002
+    nodeType: leaf
+    podId: 1
+    serial: TEP-1-102
+    route_reflector: False
