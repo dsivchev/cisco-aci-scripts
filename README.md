@@ -9,7 +9,7 @@ git clone <repo_url>
 Then use python package manager to install 'requirements.txt' file:
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 # Description
