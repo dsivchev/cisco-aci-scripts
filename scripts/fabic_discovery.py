@@ -167,7 +167,6 @@ def fabric_nodes_registration():
 
 def main():
     apic_ip_address = apic_login_info()[0]
-    apic_auth.main()
     if apic_auth.apic_connectivity_check(apic_ip_address):
         fabric_check_nodes()
         fabric_nodes_registration()
